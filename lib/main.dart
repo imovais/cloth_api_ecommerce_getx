@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: 'splash',
       defaultTransition: Transition.leftToRight,
+      //unknownRoute: GetPage(name: name, page: page),
       getPages: [
         GetPage(
           name: '/home',

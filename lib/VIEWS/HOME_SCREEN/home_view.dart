@@ -35,6 +35,7 @@ class HomeView extends StatelessWidget {
               return const Center(child: CircularProgressIndicator());
             }
             return GridView.builder(
+              physics: const BouncingScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   crossAxisSpacing: 10,
